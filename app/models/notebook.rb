@@ -8,12 +8,6 @@ class Notebook < ApplicationRecord
   validates :equipment_identifier, :serial_number, :asset_number,
             uniqueness: true
 
-  enum status: {
-    available: "available",
-    borrowed: "borrowed",
-    unavailable: "unavailable"
-  }
-
   private
 
   def set_status_available
