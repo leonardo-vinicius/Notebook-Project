@@ -17,7 +17,7 @@ class Notebook < ApplicationRecord
   private
 
   def set_status_available
-    update(status: "Available")
+    update(status: "available")
   end
 
 end
