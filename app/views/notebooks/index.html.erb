@@ -1,0 +1,24 @@
+<h1>Notebooks</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Equipment Identifier</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @notebooks.each do |notebook| %>
+      <tr>
+        <td><%= notebook.equipment_identifier %></td>
+        <td><%= notebook.status %></td>
+        <td>
+          <%= link_to "Show", notebook_path(notebook), class: "btn btn-primary btn-sm" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "New notebook", new_notebook_path, class: "btn btn-success mt-3" %>

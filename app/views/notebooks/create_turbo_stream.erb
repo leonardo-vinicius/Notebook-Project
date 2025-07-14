@@ -1,0 +1,3 @@
+<%= turbo_stream.replace "form_notebook", partial: "form", locals: { notebook: @notebook } %>
+
+<%= turbo_stream.append "alerts", partial: "shared/alert", locals: { message: flash[:error], type: "danger" } %>

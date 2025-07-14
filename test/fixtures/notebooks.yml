@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  equipment_identifier: MyString
+  serial_number: MyString
+  asset_number: MyString
+  manufacture_date: 2025-07-13
+  description: MyText
+  brand: MyString
+  model: MyString
+  purchase_date: 2025-07-13
+  status: MyString
+
+two:
+  equipment_identifier: MyString
+  serial_number: MyString
+  asset_number: MyString
+  manufacture_date: 2025-07-13
+  description: MyText
+  brand: MyString
+  model: MyString
+  purchase_date: 2025-07-13
+  status: MyString

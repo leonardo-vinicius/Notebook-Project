@@ -1,0 +1,80 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      Create New Notebook
+    </div>
+    <div class="card-body">
+      <%= form_with(model: notebook, class: "row g-3") do |form| %>
+
+        <% if notebook.errors.any? %>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Notebook could not be created.</strong>
+            <ul>
+              <% notebook.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        <% end %>
+
+
+
+        <div class="col-md-6">
+          <%= form.label :equipment_identifier, class: "form-label" do %>
+            Equipment Identifier <span class="text-danger">*</span>
+          <% end %>
+          <%= form.text_field :equipment_identifier, class: "form-control", required: true %>
+        </div>
+        <div class="col-md-6">
+          <%= form.label :serial_number, class: "form-label" do %>
+            Serial Number <span class="text-danger">*</span>
+          <% end %>
+          <%= form.text_field :serial_number, class: "form-control", required: true %>
+        </div>
+
+        <div class="col-md-6">
+          <%= form.label :purchase_date, class: "form-label" do %>
+            Purchase Date <span class="text-danger">*</span>
+          <% end %>
+          <%= form.date_field :purchase_date, class: "form-control", required: true %>
+        </div>
+
+        <div class="col-md-6">
+          <%= form.label :model, class: "form-label" do %>
+            Model <span class="text-danger">*</span>
+          <% end %>
+          <%= form.text_field :model, class: "form-control", required: true %>
+        </div>
+
+        <div class="col-md-6">
+          <%= form.label :brand, class: "form-label" do %>
+           Brand <span class="text-danger">*</span>
+          <% end %>
+          <%= form.text_field :brand, class: "form-control", required: true %>
+        </div>
+
+        <div class="col-md-6">
+          <%= form.label :description, class: "form-label" %>
+          <%= form.text_field :description, class: "form-control" %>
+        </div>
+
+        <div class="col-md-6">
+          <%= form.label :asset_number, class: "form-label" do %>
+           Asset Number <span class="text-danger">*</span>
+          <% end %>
+          <%= form.text_field :asset_number, class: "form-control", required: true %>
+        </div>
+
+        <div class="col-md-6">
+          <%= form.label :manufacture_date, class: "form-label" %>
+          <%= form.date_field :manufacture_date, class: "form-control" %>
+        </div>
+
+        <div class="col-12">
+          <%= form.submit "Salvar", class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
