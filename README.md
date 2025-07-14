@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projeto simples de Empréstimo de Notebook ( ainda em andamento )
 
-Things you may want to cover:
+Utilizado Ruby 3.3.5 e Rails 8.0.2
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-> Utilização de banco de dados com suporte SQL<br>
+-> Permite cadastro, listagem e edição de notebooks, com atributos obrigatórios e opcionais<br>
+-> Atualização de notebooks pré-cadastrados para o campo de disponíveis<br>
+-> 3 status disponíveis para o notebook<br>
+-> Unicidade em n° de série, patrimônio, marca e identificação do equipamento<br>
