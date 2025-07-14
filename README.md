@@ -1,20 +1,38 @@
-# README
+# 📝 Projeto Notebook Lending System
 
-Projeto simples de Empréstimo de Notebook ( ainda em andamento )
+Projeto simples de **Empréstimo de Notebook** (em desenvolvimento)
 
-Utilizado Ruby 3.3.5 e Rails 8.0.2
+---
 
--> Utilização de banco de dados com suporte SQL<br>
--> Permite cadastro, listagem e edição de notebooks, com atributos obrigatórios e opcionais<br>
--> Atualização de notebooks pré-cadastrados para o campo de disponíveis<br>
--> 3 status disponíveis para o notebook<br>
--> Unicidade em n° de série, patrimônio, marca e identificação do equipamento<br>
+## 💻 Tecnologias usadas
 
-<br>
-# Como rodar o projeto
--> Upei no Fly.io então basta clicar no link: https://notebook-proj.fly.dev/notebooks<br>
--> Rotas:<br>
-* Listagem de notebooks: https://notebook-proj.fly.dev/notebooks<br>
-* Criação de notebooks: https://notebook-proj.fly.dev/notebooks/new
-* Edição de notebook: https://notebook-proj.fly.dev/notebooks/<id>/edit
-* Remoção de notebook: https://notebook-proj.fly.dev/notebooks/<id>/delete
+- Ruby 3.3.5  
+- Rails 8.0.2  
+- Banco de dados com suporte SQL  
+
+---
+
+## 🚀 Funcionalidades
+
+- Cadastro, listagem e edição de notebooks com atributos obrigatórios e opcionais  
+- Atualização automática do status para notebooks disponíveis  
+- Três status possíveis para o notebook: **disponível**, **emprestado** e **indisponível**  
+- Validação de unicidade para número de série, patrimônio, marca e identificação do equipamento  
+
+---
+
+## ▶️ Como rodar o projeto
+
+O projeto está deployado no Fly.io. Para acessar, clique no link:  
+👉 [https://notebook-proj.fly.dev/notebooks](https://notebook-proj.fly.dev/notebooks)
+
+### Rotas principais
+
+| Ação                  | URL                                      |
+|-----------------------|------------------------------------------|
+| 📋 Listagem de notebooks | [https://notebook-proj.fly.dev/notebooks](https://notebook-proj.fly.dev/notebooks) |
+| ✏️ Criar notebook novo    | [https://notebook-proj.fly.dev/notebooks/new](https://notebook-proj.fly.dev/notebooks/new)   |
+| 🛠️ Editar notebook       | https://notebook-proj.fly.dev/notebooks/:id/edit  |
+| 🗑️ Remover notebook      | https://notebook-proj.fly.dev/notebooks/:id/delete |
+
+---
